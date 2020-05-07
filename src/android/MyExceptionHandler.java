@@ -61,9 +61,9 @@ public class MyExceptionHandler implements
 
     public void uncaughtException(Thread thread, Throwable exception) {
 
-        // doRestart(myContext);
+        doRestart(myContext);
             
-        Intent intent = myContext.getPackageManager().getLaunchIntentForPackage(myContext.getPackageName() );
+        /* Intent intent = myContext.getPackageManager().getLaunchIntentForPackage(myContext.getPackageName() );
 
         intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(KEY_RESTART_INTENT, intent);
@@ -74,7 +74,7 @@ public class MyExceptionHandler implements
         }
 
         Runtime.getRuntime().exit(0);
-        System.exit(2);
+        System.exit(2); */
             
                   
         /* Log.e("", "restarting app");
